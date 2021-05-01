@@ -1,0 +1,44 @@
+.App-Image {
+  background-image: url("../Images/b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 506px;
+}
+
+.App-Image-inner {
+  color: lightgray;
+}
+
+.App-Image-inner > p {
+  margin-left: 5px;
+  font-size: 55px;
+}
+
+.Option-1 {
+  margin: 0;
+  padding: 0;
+}
+
+.Option-1 > h1 {
+  font-size: 50px;
+  margin-left: 8px;
+}
+
+.Option-1 > span {
+  text-align: center;
+
+  margin-left: 8px;
+}
+
+.Option-2 {
+  margin-top: 10px;
+}
+
+.Option-2 > img {
+  margin-left: 8px;
+}
+
+.Option-2 > p {
+  margin-left: 10px;
+}
