@@ -54,3 +54,31 @@
   margin-top: 5px;
   margin-left: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .App-details > p {
+    color: gray;
+    text-align: left;
+    margin-left: -10px;
+  }
+
+  .App-details > span {
+    color: gray;
+    text-align: right;
+    margin-top: -40px;
+    margin-right: 50px;
+  }
+  .App-Forecast-inner > p {
+    color: gray;
+    margin-left: -10px;
+  }
+  .App-Forecast-inner > img {
+    margin-left: -20px;
+  }
+
+  .App-Forecast-inner > div > p {
+    color: gray;
+    margin-top: 5px;
+    margin-left: -10px;
+  }
+}

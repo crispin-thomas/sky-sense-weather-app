@@ -11,6 +11,7 @@ import React, { useState, useEffect } from "react";
 import RightSide from "./RightSide";
 
 import LeftSide from "./LeftSide";
+import platform from "platform";
 
 const StyledTextField = withStyles(() => ({
   root: {
@@ -32,6 +33,8 @@ const StyledTextField = withStyles(() => ({
     },
   },
 }))(TextField);
+
+const os = platform.os.family;
 
 function App() {
   const [name, setName] = useState("");
@@ -79,70 +82,71 @@ function App() {
         <div className="App-body">
           <Container maxWidth="md">
             <Grid container spacing={0}>
-              <Grid item xs={12}>
+              <Grid item xs={12} sm={6}>
                 <Paper>
-                  <Grid container spacing={0}>
-                    <Grid item xs={6}>
-                      <Paper>
-                        <LeftSide temp={temp} name={name} desc={desc} />
-                      </Paper>
-                    </Grid>
-                    <Grid item xs={6}>
-                      <Paper square className="App-form" id="style-1">
-                        <Paper
-                          style={{ backgroundColor: "rgba(1, 28, 37, 255)" }}
-                          square
-                        >
-                          <Grid container spacing={0}>
-                            <Grid item xs={12}>
-                              <div>
-                                <form
-                                  method="get"
-                                  onSubmit={handleSubmit}
-                                  autoComplete="true"
-                                >
-                                  <StyledTextField
-                                    label="Enter Location : "
-                                    placeholder="eg. Pune"
-                                    style={{
-                                      marginLeft: "50px",
-                                      marginRight: "52px",
-                                      marginTop: "33px",
-                                      width: "60%",
-                                    }}
-                                    inputProps={{
-                                      maxLength: 10,
-                                    }}
-                                    value={name}
-                                    onChange={handleChange}
-                                  />
-                                  <SearchIcon
-                                    style={{
-                                      textAlign: "right",
-                                      backgroundColor: "black",
-                                      color: "white",
-                                      fontSize: "80px",
-                                      padding: "20px",
-                                    }}
-                                  />
-                                </form>
-                              </div>
-                              <Divider />
-                              <RightSide
-                                temp={temp}
-                                wind={wind}
-                                desc={desc}
-                                forcast={forcast}
+                  <LeftSide temp={temp} name={name} desc={desc} />
+                </Paper>
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <Paper square className="App-form" id="style-1">
+                  <Paper
+                    style={{ backgroundColor: "rgba(1, 28, 37, 255)" }}
+                    square
+                  >
+                    <Grid container spacing={0}>
+                      <Grid item xs={12}>
+                        <div>
+                          <form
+                            method="get"
+                            onSubmit={handleSubmit}
+                            autoComplete="true"
+                          >
+                            <StyledTextField
+                              label="Enter Location : "
+                              placeholder="eg. Pune"
+                              style={{
+                                marginLeft: "50px",
+                                marginRight: "52px",
+                                marginTop: "33px",
+                                width: "60%",
+                              }}
+                              inputProps={{
+                                maxLength: 10,
+                              }}
+                              value={name}
+                              onChange={handleChange}
+                            />
+                            {os === "Android" || os === "iOS" ? (
+                              <></>
+                            ) : (
+                              <SearchIcon
+                                style={{
+                                  textAlign: "right",
+                                  backgroundColor: "black",
+                                  color: "white",
+                                  fontSize: "80px",
+                                  padding: "20px",
+                                }}
                               />
-                            </Grid>
-                          </Grid>
-                        </Paper>
-                      </Paper>
+                            )}
+                          </form>
+                        </div>
+                        <Divider />
+                        <RightSide
+                          temp={temp}
+                          wind={wind}
+                          desc={desc}
+                          forcast={forcast}
+                        />
+                      </Grid>
                     </Grid>
-                  </Grid>
+                  </Paper>
                 </Paper>
               </Grid>
             </Grid>
+            <div className="footer">
+              <p>&copy; Crispin Thomas</p>
+            </div>
           </Container>
         </div>
       )}
