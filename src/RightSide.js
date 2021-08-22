@@ -6,7 +6,7 @@ import "./css/rightSide.css";
 
 function RightSide({ temp, wind, desc, forcast }) {
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <p className="App-details-title">Weather Details</p>
       <div className="App-details">
         <p>Temperature</p>
