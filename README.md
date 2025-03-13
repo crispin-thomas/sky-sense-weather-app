@@ -19,7 +19,7 @@ Ensure you have the following installed:
 Clone the repository and install dependencies:
 ```sh
 git clone https://github.com/crispin-thomas/my-weather-app.git
-cd sky-sense
+cd my-weather-app
 npm install  # or yarn install
 ```
 
