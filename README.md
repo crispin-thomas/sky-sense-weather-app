@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Sky Sense
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sky Sense is a fast and efficient web application built using Vite. It provides an intuitive and responsive interface for users to interact with weather data, sky conditions, or any other functionalities you plan to include.
 
-## Available Scripts
+## Features
+- ⚡ Built with Vite for lightning-fast performance
+- 🎨 Modern UI with React and TypeScript
+- 🌍 API integration for weather or sky condition data.
+- 📱 Fully responsive design
+- 🚀 Optimized for fast loading speeds and performance
 
-In the project directory, you can run:
+## Getting Started
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+- npm or yarn
 
-### `npm start`
+### Installation
+Clone the repository and install dependencies:
+```sh
+git clone https://github.com/crispin-thomas/my-weather-app.git
+cd sky-sense
+npm install  # or yarn install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Running the Application
+To start the development server:
+```sh
+npm run dev  # or yarn dev
+```
+This will start a local development server, usually available at `http://localhost:5173/`.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Building for Production
+To create an optimized production build:
+```sh
+npm run build  # or yarn build
+```
+The build files will be generated in the `dist/` directory.
 
-### `npm test`
+### Preview the Build
+To locally preview the production build:
+```sh
+npm run preview  # or yarn preview
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
+```
+my-weather-app/
+├── src/            # Source files
+│   ├── api/        # API request handlers
+│   ├── components/ # Reusable UI components
+│   ├── hooks/      # Custom React hooks
+│   ├── lib/        # Library utilities
+│   ├── pages/      # Page components
+│   ├── services/   # Business logic and API services
+│   ├── types/      # TypeScript type definitions
+│   ├── utils/      # Helper functions
+│   ├── App.css     # Global styles
+│   ├── App.tsx     # Main application component
+│   ├── index.css   # Global CSS styles
+│   ├── main.tsx    # Entry point
+│   ├── vite-env.d.ts # Vite environment types
+├── index.html      # Main HTML file
+├── vite.config.ts  # Vite configuration
+├── package.json    # Project dependencies
+├── README.md       # Project documentation
+```
 
-### `npm run build`
+## Technologies Used
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
+Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
+This project is licensed under the MIT License. See `LICENSE` for details.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+For any questions or feedback, reach out at crispinkalarickal@gmail.com.
